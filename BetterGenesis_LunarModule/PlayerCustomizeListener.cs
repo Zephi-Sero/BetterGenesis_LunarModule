@@ -78,7 +78,7 @@ namespace BetterGenesis_LunarModule {
             } else if(settings.moddedFeatures.TryGetValue("BetterGenesis_LunarModule.LunarSway", out InternalPatcher.Character.ModdedCharacterFeature mcf)) {
                 sway_lower = mcf.ToSaveableString().ToLowerInvariant();
             }
-            string sway_icon = mod.ModAssets + "/" + sway_lower + "icon.png";
+            string sway_icon = BetterGenesis_LunarModule.ModAssets + "/" + sway_lower + "icon.png";
             sway.name = "LunarSway_" + sway_lower;
             Texture2D tex = new Texture2D(2, 2);
             tex.LoadImage(File.ReadAllBytes(sway_icon));
